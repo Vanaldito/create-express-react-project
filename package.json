@@ -1,0 +1,25 @@
+{
+  "name": "create-express-react-project",
+  "version": "1.0.0",
+  "description": "An npx tool to create a fullstack application using express and react",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "create-express-react-project": "bin/index.js"
+  },
+  "scripts": {
+    "dev": "concurrently 'cd server && yarn dev' 'cd client && yarn dev'"
+  },
+  "keywords": [
+    "express",
+    "react",
+    "fullstack"
+  ],
+  "author": "Vanaldito",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "minimist": "^1.2.6",
+    "prompts": "^2.4.2"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "template-typescript",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "concurrently 'cd server && yarn dev' 'cd client && yarn dev'"
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0"
+  }
+}
