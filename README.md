@@ -37,7 +37,7 @@ $ npx create-express-react-project
 $ yarn create express-react-project <project-name> --template <template>
 
 # For npm:
-$ npx create-express-react-project <project-name> --tempalte <template>
+$ npx create-express-react-project <project-name> --template <template>
 ```
 
 The templates are the following:
