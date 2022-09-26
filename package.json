@@ -3,6 +3,10 @@
   "version": "1.0.1",
   "description": "An npx tool to create a fullstack application using express and react",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vanaldito/create-express-react-project.git"
+  },
   "type": "module",
   "bin": {
     "create-express-react-project": "bin/index.js"
