@@ -3,7 +3,7 @@
 > An npx tool to create a fullstack application using React and Express
 
 - Fully Customizable
-- Using [Vite](https://vitejs.dev/) for the Client 
+- Using [Vite](https://vitejs.dev/) for the Client
 - Support for Typescript
 
 ## Folder Structure
@@ -41,8 +41,9 @@ $ npx create-express-react-project <project-name> --template <template>
 ```
 
 The templates are the following:
-- ```javascript```
-- ```typescript```
+
+- `javascript`
+- `typescript`
 
 Now, go to the project directory and run:
 

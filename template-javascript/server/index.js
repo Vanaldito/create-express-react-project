@@ -1,20 +1,22 @@
 const express = require("express");
+const path = require("path");
 
 const assetsRouter = require("./src/routes/assets");
 const apiRouter = require("./src/routes/api");
 
 const app = express();
 
-if (process.env.NODE_ENV !== "production") {
-  app.use(assetsRouter);
-}
-
 app.use("/api/v1", apiRouter);
 
-/* Add you routes here */
-
-app.get("/*", (_req, res) => {
+app.get("/", (_req, res) => {
   res.sendFile(path.join(__dirname, "static/index.html"));
+});
+
+/* Add your routes here */
+
+// Remember remove the assets router in production
+app.get("/*", assetsRouter, (_req, res) => {
+  res.status(404).sendFile(path.join(__dirname, "static/index.html"));
 });
 
 const PORT = 5000;
