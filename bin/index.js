@@ -7,7 +7,7 @@ import path from "path";
 import prompts from "prompts";
 import minimist from "minimist";
 import { fileURLToPath } from "url";
-import { exec, execFile, execSync, spawn } from "child_process";
+import { spawn } from "child_process";
 
 const args = minimist(process.argv.slice(2), { string: ["_"] });
 const cwd = process.cwd();
